@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TrollStore App Hub</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff944d, #ff88aa);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .app-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .app-card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 1.5rem 1rem;
+      width: 180px;
+      transition: transform 0.3s;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .app-card:hover {
+      transform: scale(1.05);
+    }
+
+    .app-card h3 {
+      margin: 0.5rem 0 1rem;
+      font-size: 1.1rem;
+    }
+
+    .install-link {
+      background-color: #ff7722;
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 12px;
+      display: inline-block;
+      margin-top: auto;
+      user-select: none;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>TrollStore App Hub</h1>
+  <p>Tap an app to install directly with TrollStore</p>
+
+  <div class="app-grid">
+    <div class="app-card">
+      <h3>Unc0ver (iOS 11–14)</h3>
+      <a class="install-link" href="trollstore://install?url=https://ipasign-autoupdate.github.io/ipa/uncoverios1114.ipa">Install</a>
+    </div>
+    <div class="app-card">
+      <h3>Taurine (iOS 14)</h3>
+      <a class="install-link" href="trollstore://install?url=https://ipasign-autoupdate.github.io/ipa/taurineios14.ipa">Install</a>
+    </div>
+    <div class="app-card">
+      <h3>Dopamine (iOS 15–16.6.1)</h3>
+      <a class="install-link" href="trollstore://install?url=https://ipasign-autoupdate.github.io/ipa/dopamineios1516.ipa">Install</a>
+    </div>
+    <div class="app-card">
+      <h3>TrollInstallerX (iOS 14–16.6.1)</h3>
+      <a class="install-link" href="trollstore://install?url=https://ipasign-autoupdate.github.io/ipa/trollinstallxios1416.ipa">Install</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>Contact: <a href="mailto:ipasign@linuxmail.org" style="color: white;">ipasign@linuxmail.org</a></p>
+    <p>Copyright © 2025 ipasign-autoupdate</p>
+    <p>If you want to donate, please send a amazon gift card to the email address above.</p>
+  </footer>
+</body>
+</html>
